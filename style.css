@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Roboto", sans-serif;;
+}
+:root{
+    --primary: #FF6B82;
+
+
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  overflow: hidden;
+  background-color: rgb(243, 232, 232);
+}
+.card-box{
+    display: flex;
+    padding: 50px ;
+    background-color: white;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+}
+.card{
+    cursor: pointer;
+
+    max-width: 348px;
+    width:  348px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+ height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px rgba(167, 167, 167, 0.25);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-left{
+    padding: 8px;
+    width: 30%;
+    max-width: 70px;
+   color: white;
+    background: var(--primary) ;
+    border-radius: 10px 0 0 10px;
+    border-right:2px dotted white;
+}
+.card h3{
+    text-align: center;
+}
+.card-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0px;
+    border-radius: 0 10px 10px 0;
+}
+.over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+.offer{
+    font-size: 14x;
+    font-weight: 600;
+    color: #333;
+}
+.heading{
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+.btn{
+
+}
+.input{
+    color: var(--primary);
+}
+input[type='radio'] {
+    -webkit-appearance:none;
+
+    border:1px solid var(--primary);
+    border-radius:50%;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    cursor:pointer;
+    padding: 1px;
+
+  }
+
+
+  
+  /* Style the radio button when checked */
+  input[type='radio']:checked {
+    border:1px solid var(--primary);
+    border-radius:50%;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    cursor:pointer;
+    padding: 1px;
+
+    border-radius: 50%;
+    background-color: var(--primary); /* Primary color when checked */
+    border-color: var(--primary);     /* Border color when checked */
+    box-shadow: 0 0 5px 0px var(--primary) inset; /* Shadow color when checked */
+  }
+  
+  .text{
+        color: #333;
+        font-size: 14px;
+        font-weight: 500;
+  }
+
+  .text-container{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+  }
+  .popular{
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .label{
+    display: flex;
+    flex-direction: row
+    ;
+    gap: 10px;
+  }
+  .label label{
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .mx{
+    margin-left: auto;
+  }
+
+  .col{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+
+
+  }
+  .grid{
+    display: grid;
+    flex-direction: row;
+    justify-content: start;
+    align-content: center;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    gap: 20px;
+  }
+.auto{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+
+  .gap{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  select{
+    padding: 8px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    width: 100%;
+    color:#333;
+    font-size: 14px;
+    font-weight: 500;
+  }
+    .btn{
+        padding: 10px 20px;
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    .btn:hover{
+        background-color: #FF4D6D;
+    }
+    .btn:active{
+        background-color: #FF4D6D;
+    }
+    .none{
+        display: none;
+    }
+
+    .acitve-card{
+        background-color: #FFF9FA;
+        padding: 8px;
+        border:1px solid var(--primary);
+    }
