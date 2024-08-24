@@ -1,3 +1,15 @@
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.main-card').forEach(card => {
+        card.addEventListener('click', (event) => {
+            // Prevent click events on child elements from triggering card selection
+            if (event.target.closest('select')) return;
+
+            const cardNumber = Array.from(document.querySelectorAll('.main-card')).indexOf(card) + 1;
+            selectCard(cardNumber);
+        });
+    });
+});
+
 function selectCard(cardNumber) {
     const cards = document.querySelectorAll('.main-card');
     const radios = document.querySelectorAll('.input');
@@ -13,15 +25,9 @@ function selectCard(cardNumber) {
             const isActive = card.classList.contains('acitve-card');
 
             if (isActive) {
-                card.classList.remove('acitve-card');
-                cardLeft.classList.remove('none');
-                cardRight.classList.add('py');
-                radios[index].checked = false;
-
-                if (offerContainer) offerContainer.classList.add('none');
-                if (strike) strike.classList.add('none');
-                if (gapSection) gapSection.style.display = 'none';
+                // If the card is already active, do nothing (or handle toggling)
             } else {
+                // Set the selected card as active
                 card.classList.add('acitve-card');
                 cardLeft.classList.add('none');
                 cardRight.classList.remove('py');
@@ -31,6 +37,7 @@ function selectCard(cardNumber) {
                 if (strike) strike.classList.remove('none');
                 if (gapSection) gapSection.style.display = 'flex';
 
+                // Deactivate all other cards
                 cards.forEach((otherCard, otherIndex) => {
                     if (otherIndex !== index) {
                         const otherCardLeft = otherCard.querySelector('.card-left');

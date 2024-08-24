@@ -11,8 +11,18 @@
 
 }
 input{
-  accent-color: #FF6B82;
+  accent-color: var(--primary);
+      
+
+
 }
+
+
+
+
+
+
+
 .offer-container{
 padding: 1px 4px;
 border-radius: 4px;
@@ -90,9 +100,10 @@ gap: 16px;
    color: white;
     background: var(--primary) ;
     border-radius: 10px 0 0 10px;
-    border-right:2px dotted white;
+    border-right:5px dashed white;
+
 }
-.card h3{
+.card-left p{
     text-align: center;
 }
 .card-right{
@@ -162,6 +173,7 @@ gap: 16px;
 color:#3E3E3E;
 font-size: 14px;
 text-align: center;
+margin-top: 8px;
 
 }
   
@@ -183,6 +195,7 @@ text-align: center;
     color: var(--primary);
     font-size: 14px;
     font-weight: 600;
+    margin-right: 16px;
   }
   .btwn{
     justify-content: space-between;
@@ -291,7 +304,7 @@ text-align: center;
   color: white;
   background: var(--primary);
   border-radius: 10px 0 0 10px;
-  border-right: 2px dotted white;
+  border-right: 2px dashed white;
   transition: opacity 0.3s;
 }
 
@@ -302,4 +315,15 @@ text-align: center;
 
 .active-card .card-left {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .main-card {
+    width: 100%;
+    max-width: 100%;
+  }
+  .card-box {
+    padding: 20px;
+    gap: 20px;
+  }
 }
