@@ -1,19 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.main-card').forEach(card => {
-        card.addEventListener('click', (event) => {
-            if (event.target.closest('select')) return;
 
-            const cardNumber = Array.from(document.querySelectorAll('.main-card')).indexOf(card) + 1;
-            selectCard(cardNumber);
-        });
-    });
-});
 
 function selectCard(cardNumber) {
     const cards = document.querySelectorAll('.main-card');
-    const radios = document.querySelectorAll('.input');
+    const radios = document.querySelectorAll('.radio');
 
     cards.forEach((card, index) => {
+        console.log(cardNumber);
+
         const cardLeft = card.querySelector('.card-left');
         const offerContainer = card.querySelector('.offer-container');
         const strike = card.querySelector('.strike');
