@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add to card</title>
     <link rel="stylesheet" href="style.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/7f7b41ebb9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,94 +22,156 @@
         <div class="card-box">
             <h1 class="heading">YAY! It's BOGO</h1>
 
-            <div class="card">
-                <div class="card-left center">
-                    <h3>30% Off</h3>
-                </div>
 
-                <div class="card-right">
-                    <input type="radio" class="input" />
-
-                    <div class="text-container">
-
-                        <p class="text">Buy 1 Get 1 Free</p>
-                        <p class="offer">
-                            $18.00 USD
-                        </p>
+            <div class=" main-card  " onclick="selectCard(1)">
+                <div class="card">
+                    <div class="card-left center  ">
+                        <h3>30% Off</h3>
                     </div>
+                    <div class="flex py  btwn">
+                        <div class="card-right">
+                            <input type="radio" class="input" />
+
+                            <div class="text-container">
+
+                                <p class="text">Buy 1 Get 1 Free <span class="offer-container none">
+                                        30% Off
+                                    </span></p>
+                                <p class="offer">
+                                    $18.00 USD <span class="strike none">
+                                        $25.71 USD
+                                    </span>
+                                </p>
+                            </div>
 
 
-                </div>
-            </div>
-            <div class="card acitve-card  col">
-
-                <div class="card-left center none">
-                    <h3>30% Off</h3>
-                </div>
-                <div class="col ">
-                    <div class="card-right">
-                        <input type="radio" class="input" />
-
-                        <div class="text-container">
-
-                            <p class="text">Buy 1 Get 1 Free</p>
-                            <p class="offer">
-                                $18.00 USD
-                            </p>
                         </div>
 
-
                     </div>
-                    <h3 class="popular center">
-                        Most Popular
-                    </h3>
                 </div>
 
-                <div class="">
-                    <div class="">
 
-                        <div class="gap">
-                            <div class="grid">
-                                <p></p>
-                                <p class="text">Size</p>
-                                <p class="text">Color</p>
+
+
+                <div class="gap none">
+                    <div class="flex">
+                        <div class="w"></div>
+                        <p class="text w-s ">Size</p>
+                        <p class="text ">Color</p>
+                    </div>
+
+                    <div class="flex">
+                        <p class="auto text w">#1</p>
+                        <select>
+                            <option disabled selected> Size</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option disabled selected> Color</option>
+                            <option>Red</option>
+                            <option>Black</option>
+                            <option>Yellow</option>
+                        </select>
+
+
+                    </div>
+                    <div class="flex">
+                        <p class="auto text w">#2</p>
+                        <select>
+                            <option disabled selected> Size</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option disabled selected> Color</option>
+                            <option>Red</option>
+                            <option>Black</option>
+                            <option>Yellow</option>
+                        </select>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+            <div class=" main-card  " onclick="selectCard(2)">
+                <div class="card">
+                    <div class="card-left center ">
+                        <h3>30% Off</h3>
+                    </div>
+                    <div class="flex py   btwn">
+                        <div class="card-right">
+                            <input type="radio" class="input" />
+
+                            <div class="text-container">
+
+                                <p class="text">Buy 2 Get 4 <span class="offer-container none">
+                                        30% Off
+                                    </span></p>
+                                <p class="offer">
+                                    $24.00 USD <span class="strike none ">
+                                        $25.71 USD
+                                    </span>
+                                </p>
                             </div>
 
-                            <div class="grid">
-                                <p class="auto text">#1</p>
-                                <select>
-                                    <option disabled selected> Size</option>
-                                    <option>S</option>
-                                    <option>M</option>
-                                    <option>L</option>
-                                </select>
-                                <select>
-                                    <option disabled selected> Color</option>
-                                    <option>Red</option>
-                                    <option>Black</option>
-                                    <option>Yellow</option>
-                                </select>
 
-
-                            </div>
-                            <div class="grid">
-                                <p class="auto text">#2</p>
-                                <select>
-                                    <option disabled selected> Size</option>
-                                    <option>S</option>
-                                    <option>M</option>
-                                    <option>L</option>
-                                </select>
-                                <select>
-                                    <option disabled selected> Color</option>
-                                    <option>Red</option>
-                                    <option>Black</option>
-                                    <option>Yellow</option>
-                                </select>
-
-
-                            </div>
                         </div>
+                        <h3 class="popular center">
+                            Most Popular
+                        </h3>
+                    </div>
+                </div>
+
+
+
+
+                <div class="gap none">
+                    <div class="flex">
+                        <div class="w"></div>
+                        <p class="text w-s ">Size</p>
+                        <p class="text w-s ">Color</p>
+                    </div>
+
+                    <div class="flex">
+                        <p class="auto text w">#1</p>
+                        <select>
+                            <option disabled selected> Size</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option disabled selected> Color</option>
+                            <option>Red</option>
+                            <option>Black</option>
+                            <option>Yellow</option>
+                        </select>
+
+
+                    </div>
+                    <div class="flex">
+                        <p class="auto text w">#2</p>
+                        <select>
+                            <option disabled selected> Size</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option disabled selected> Color</option>
+                            <option>Red</option>
+                            <option>Black</option>
+                            <option>Yellow</option>
+                        </select>
 
 
 
@@ -115,10 +181,109 @@
                 </div>
 
             </div>
-            <div>
+            <div class=" main-card " onclick="selectCard(3)">
+                <div class="card">
+                    <div class="card-left center  ">
+                        <h3>10% Off</h3>
+                    </div>
+                    <div class="flex py   btwn">
+                        <div class="card-right">
+                            <input type="radio" class="input" />
+
+                            <div class="text-container">
+
+                                <p class="text">Buy 3 Get 6<span class="offer-container none">
+                                        10% Off
+                                    </span></p>
+                                <p class="offer">
+                                    $18.00 USD
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="gap none">
+                    <div class="flex">
+                        <div class="w"></div>
+                        <p class="text w-s ">Size</p>
+                        <p class="text ">Color</p>
+                    </div>
+
+                    <div class="flex">
+                        <p class="auto text w">#1</p>
+                        <select>
+                            <option disabled selected> Size</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option disabled selected> Color</option>
+                            <option>Red</option>
+                            <option>Black</option>
+                            <option>Yellow</option>
+                        </select>
+
+
+                    </div>
+                    <div class="flex">
+                        <p class="auto text w">#2</p>
+                        <select>
+                            <option disabled selected> Size</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option disabled selected> Color</option>
+                            <option>Red</option>
+                            <option>Black</option>
+                            <option>Yellow</option>
+                        </select>
+
+
+
+
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="btn-container">
+                <div class="flex btwn">
+                    <p class="free">
+                        Free Delivery
+                    </p>
+                    <p class="total">
+                        Total: $18.00 USD
+                    </p>
+                </div>
+                <div>
+                    <button class="btn">
+                        <i class="fa-solid fa-plus"></i>
+                        Add to Cart</button>
+
+                    <p class="power"> Powered by <span class="pumber">
+                            Pumper
+                        </span></p>
+                </div>
 
             </div>
         </div>
+
+    </div>
+    <div>
+
     </div>
     </div>
 
